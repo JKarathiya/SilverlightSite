@@ -1,0 +1,26 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:TMTemplate">
+    <Style TargetType="local:Gallery">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:Gallery">
+                    <Grid>
+                        <Grid.Resources>
+                            <Storyboard x:Name="NextImage">
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Image">
+                                    <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="1"/>
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </Grid.Resources>
+                        <MediaElement x:Name="Sound" AutoPlay="False" Volume="1"/>
+                        <Image x:Name="OldImage" Stretch="UniformToFill"/>
+                        <Image x:Name="Image" Stretch="UniformToFill"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

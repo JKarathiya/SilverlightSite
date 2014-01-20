@@ -1,0 +1,13 @@
+﻿<sdk:Page	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+	x:Class="TMTemplate.PageNotFound" 
+	Title="Page Not Found"
+	Width="980" Height="390">
+    <Grid x:Name="LayoutRoot">
+        <TextBlock x:Name="txtErrorMessage" TextWrapping="Wrap" MaxWidth="800" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFB10000" FontSize="10" Text="THERE IS NO SUCH A PAGE" FontFamily="Arial"/>
+    </Grid>
+</sdk:Page>

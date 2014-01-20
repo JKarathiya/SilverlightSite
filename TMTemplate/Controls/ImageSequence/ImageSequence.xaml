@@ -1,0 +1,19 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:TMTemplate"
+    xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows">
+    <Style TargetType="local:ImageSequence">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:ImageSequence">
+                    <Grid x:Name="LayoutRoot">
+                        <Canvas x:Name="Frame">
+                            <Canvas x:Name="Film" />
+                        </Canvas>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

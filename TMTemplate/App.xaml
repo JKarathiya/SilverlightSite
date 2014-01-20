@@ -1,0 +1,30 @@
+﻿<Application
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="TMTemplate.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Controls/ImageSequence/ImageSequence.xaml"/>
+                <ResourceDictionary Source="Controls/Gallery/Gallery.xaml"/>
+                <ResourceDictionary Source="Controls/Scroll.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <sdk:UriMapper x:Key="uriMapping" x:Name="uriMapping">
+                <sdk:UriMapping MappedUri="/Pages/Home.xaml" Uri="Home"/>
+                <sdk:UriMapping MappedUri="/Pages/Contactus.xaml" Uri="Contactus"/>
+                <sdk:UriMapping MappedUri="/Pages/Aboutus.xaml" Uri="Aboutus"/>
+                <sdk:UriMapping MappedUri="/Pages/Services.xaml" Uri="Services"/>
+                <sdk:UriMapping MappedUri="/Pages/News.xaml" Uri="News"/>
+                <sdk:UriMapping MappedUri="/Pages/PrivacyPolicy.xaml" Uri="PrivacyPolicy"/>
+
+                <sdk:UriMapping MappedUri="/Pages/System/PageNotFound.xaml" Uri="NotFound"/>
+                <sdk:UriMapping MappedUri="/Pages/System/Splash.xaml" Uri="_"/>
+                <sdk:UriMapping MappedUri="/Pages/System/Splash.xaml" Uri=""/>
+            </sdk:UriMapper>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>    

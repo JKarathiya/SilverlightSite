@@ -1,0 +1,17 @@
+﻿<sdk:Page	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"	xmlns:local="clr-namespace:TMTemplate"
+	mc:Ignorable="d"
+	x:Class="TMTemplate.Contacts" 
+	Title="Contacts" Width="880" Height="450">
+    <sdk:Page.Resources>
+        <Storyboard x:Name="Storyboard1"/>
+    </sdk:Page.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="DarkGray">
+        <TextBlock Text="Contactus Page" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+     
+    </Grid>
+</sdk:Page>
